@@ -19,12 +19,14 @@ section .heading{
   text-align: center;
   padding-bottom: 40px;
 }
+/*ligne séparatrice rouge*/
 .red-divider{
   width: 100px;
   height: 2px;
   background: #d82c2e;
   margin: 0 auto 20px;
 }
+/*ligne séparatrice blanche*/
 .white-divider{
   width: 100px;
   height: 2px;
@@ -32,8 +34,13 @@ section .heading{
   margin: 0 auto 20px;
 }
 /* MENU */
-.navbar {
+/*écriture blanche sur les éléments de la navbar*/
+.navbar-dark .navbar-nav .nav-link{
+  color: #fff;
+}
+body .navbar {
   background-color: #d82c2e;
+  color: #fff;
   font-size: 12px;
   border-bottom: 1px solid #fff;
   letter-spacing: 4px;
@@ -41,15 +48,16 @@ section .heading{
   font-weight: bold;
 }
 .nav-pills .nav-link{
-  color: #fff !important;
   text-align: center;
 }
-.nav-pills .nav-link.active,  .nav-pills .nav-link:hover{
-  color: #d82c2e !important;
-  background-color: #fff !important;
+/*fond blanc écriture rouge sur les éléments de la navbar active ou hover*/
+#myNavbar .nav-pills .nav-link.active, #myNavbar .nav-pills .nav-link:hover{
+  color:  #d82c2e;
+background: #fff;
 }
+/*menu burger*/
 .navbar-toggler{
-  color: #fff !important;
+  color: #fff;
   border-style: none;
 }
 /* ABOUT */
@@ -69,7 +77,7 @@ section .heading{
 #about .heading h3{
   color: #000;
 }
-.button1{
+.buttonCv{
   font-weight: bold;
   text-transform: uppercase;
   color: white;
@@ -80,12 +88,12 @@ section .heading{
   border-radius: 3px;
   transition: all 0.3s ease-in 0s;
 }
-.button1:hover{
+.buttonCv:hover{
   background: white;
   color: #d82c2e;
   text-decoration: none;
 }
-/* SKILLS */
+/* SKILLS avec les barres de progression */
 #skills{
   background: #fff;
 }
@@ -226,14 +234,14 @@ Taille normale des titres sur un ordinateur */
     line-height: 1.2em;
   }
 }
-/* EDUCATION */
-#education{
+/* formation */
+#formation{
   background: #fff;
 }
-#education .heading h2{
+#formation .heading h2{
   color: #d82c2e;
 }
-.education-block{
+.formation-block{
   width:90%;
   margin: 0 auto;
   text-align: center;
@@ -243,24 +251,24 @@ Taille normale des titres sur un ordinateur */
   border: 2px solid #ccc;
   margin-bottom: 20px;
 }
-.education-block h5{
+.formation-block h5{
   color: #888;
   font-size: 15px;
   margin-bottom: 15px;
 }
-.education-block .fas{
+.formation-block .fas{
   font-size: 35px;
 }
-.education-block h3{
+.formation-block h3{
   color: #d82c2e;
 }
-.education-block h4{
+.formation-block h4{
   margin-bottom: 20px;
 }
-.education-block p{
+.formation-block p{
   font-weight: bold;
 }
-.education-block .red-divider{
+.formation-block .red-divider{
   margin-bottom: 20px;
 }
 /* PORTFOLIO
@@ -283,10 +291,18 @@ Taille normale des titres sur un ordinateur */
 #portfolio .col-md-4{
   margin-bottom: 20px;
 }*/
-/*  */
+
+/* carousel avec mes réalisations*/
 #carousel{
   background: #d82c2e;
 }
+#carousel h3,h5{
+  color: #fff;
+  }
+  .border1{
+    border-radius: 30px;
+    border: 7px double white;
+  }
 #carousel .heading h2{
   color: #fff;
   }

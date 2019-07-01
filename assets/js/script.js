@@ -1,3 +1,4 @@
+//fonction qui exécute un effet de déroulement lorsque que l on clique sur les onlets de la navbar ou le chevron du footer
 $(function(){
 
     $(".navbar a, footer a").on("click", function(event){
