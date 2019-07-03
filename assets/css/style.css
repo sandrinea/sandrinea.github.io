@@ -296,15 +296,12 @@ Taille normale des titres sur un ordinateur */
 #carousel{
   background: #d82c2e;
 }
-#carousel h3,h5{
+#carousel h3, h5, .heading h2{
   color: #fff;
   }
   .border1{
     border-radius: 30px;
     border: 7px double white;
-  }
-#carousel .heading h2{
-  color: #fff;
   }
 .carousel-indicators li{
   width: 10px;
