@@ -23,7 +23,7 @@ section .heading{
 .red-divider{
   width: 100px;
   height: 2px;
-  background: #d82c2e;
+  background:#66cdaa;
   margin: 0 auto 20px;
 }
 /*ligne séparatrice blanche*/
@@ -39,7 +39,7 @@ section .heading{
   color: #fff;
 }
 body .navbar {
-  background-color: #d82c2e;
+  background-color: #66CDAA;
   color: #fff;
   font-size: 12px;
   border-bottom: 1px solid #fff;
@@ -52,7 +52,7 @@ body .navbar {
 }
 /*fond blanc écriture rouge sur les éléments de la navbar active ou hover*/
 #myNavbar .nav-pills .nav-link.active, #myNavbar .nav-pills .nav-link:hover{
-  color:  #d82c2e;
+  color:  #66cdaa;
 background: #fff;
 }
 /*menu burger*/
@@ -63,7 +63,7 @@ background: #fff;
 /* ABOUT */
 #about{
   padding-top: 50px;
-  background: #d82c2e;
+  background: #66cdaa;
 }
 .profile-picture{
   margin: 0 auto;
@@ -90,7 +90,7 @@ background: #fff;
 }
 .buttonCv:hover{
   background: white;
-  color: #d82c2e;
+  color: #66cdaa;
   text-decoration: none;
 }
 /* SKILLS avec les barres de progression */
@@ -98,14 +98,14 @@ background: #fff;
   background: #fff;
 }
 #skills .heading h2 {
-  color: #d82c2e;
+  color: #66cdaa;
 }
 #skills h4{
-  color: #d82c2e;
+  color: #66cdaa;
   text-align: center;
 }
 #skills p{
-  color: #d82c2e;
+  color: #66cdaa;
   font-weight: bold;
 }
 #skills .progress{
@@ -114,7 +114,7 @@ background: #fff;
   background: #ddd;
 }
 #skills .progress-bar{
-  background: #d82c2e;
+  background: #66cdaa;
 }
 #skills .progress h5{
   margin-top: 5px;
@@ -122,7 +122,7 @@ background: #fff;
 }
 /* EXPERIENCE */
 #experience{
-  background: #d82c2e;
+  background: #66cdaa;
 }
 #experience .heading h2{
   color: #fff;
@@ -153,7 +153,7 @@ background: #fff;
   display: table;
 }
 .timeline li .timeline-badge{
-  color: #d82c2e;
+  color: #66cdaa;
   width: 50px;
   line-height: 50px;
   font-size: 20px;
@@ -210,7 +210,7 @@ background: #fff;
   font-size: 20px;
 }
 .timeline-heading h4{
-  color: #d82c2e;
+  color: #66cdaa;
 }
 /* Media query pour reduire la taille de la police en responsive sur timeline.panel
 Taille normale des titres sur un ordinateur */
@@ -239,7 +239,7 @@ Taille normale des titres sur un ordinateur */
   background: #fff;
 }
 #formation .heading h2{
-  color: #d82c2e;
+  color: #66cdaa;
 }
 .formation-block{
   width:90%;
@@ -260,7 +260,7 @@ Taille normale des titres sur un ordinateur */
   font-size: 35px;
 }
 .formation-block h3{
-  color: #d82c2e;
+  color: #66cdaa;
 }
 .formation-block h4{
   margin-bottom: 20px;
@@ -294,17 +294,14 @@ Taille normale des titres sur un ordinateur */
 
 /* carousel avec mes réalisations*/
 #carousel{
-  background: #d82c2e;
+  background: #66cdaa;
 }
-#carousel h3,h5{
+#carousel h3, h5, .heading h2{
   color: #fff;
   }
   .border1{
     border-radius: 30px;
     border: 7px double white;
-  }
-#carousel .heading h2{
-  color: #fff;
   }
 .carousel-indicators li{
   width: 10px;
@@ -328,7 +325,7 @@ footer{
 footer .fas{
   font-size:  25px;
   margin: 20px;
-  color: #d82c2e;
+  color: #66cdaa;
   height: 30px;
 }
 footer .fas:hover{
