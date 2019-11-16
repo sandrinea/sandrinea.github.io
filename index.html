@@ -12,10 +12,10 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="60"><!--ligne pour que l onglet actif de la navbar change quand on fait défiler le cv-->
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
   <!--création de la navbar avec les liens-->
   <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><!--menu burger en responsive-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
       <i class="fas fa-bars fa-lg"></i><!--icone menu burger-->
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
@@ -29,14 +29,17 @@
     </div>
   </nav>
   <!--section "about" avec les téléchargement du cv en pdf-->
-  <section id="about" class="container-fluid"><!--container fluid pour prendre toute la largeur-->
-    <div class="col-md-8 profile-picture">
-      <img src="assets/img/Me.jpg" alt="ma photo" class="picture rounded-circle">
+  <section id="about" class="container-fluid">
+    <div class="col-md-4 profile-picture mt-3">
+      <img src="assets/img/Me3.jpg" alt="ma photo" class="picture rounded-circle">
     </div>
     <div class="heading pb-2">
       <h1 class="mt-3">Sandrine ANDREETTO</h1>
       <h3>Développeur Web et Web Mobiles</h3>
-      <a href="docs/CV_S.pdf" class="buttonCv">Télécharger CV</a><!--bouton pour télécharger le CV-->
+      <p class="text-white">Après avoir mis en place de solides fondations en informatique, je me suis tournée vers
+        le développement web, domaine dans lequel je m’épanouis pleinement !</p>
+      <p class="text-white">Je recherche une entreprise dynamique au sein de laquelle je puisse apporter mon savoir-faire ainsi que mon savoir-être.</p>
+      <a href="docs/cvdevSandrine.pdf" class="buttonCv">Télécharger CV</a>
     </div>
   </section>
   <!--section compétences skills avec les barres de progression-->
@@ -50,163 +53,187 @@
         <div class="col-lg-6">
           <h4>Languages</h4>
           <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" style="width:80%">
+              <h5>HTML 80%</h5>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" style="width:80%">
+              <h5>CSS 80%</h5>
+            </div>
+          </div>
+          <div class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" style="width:60%">
-              <h5>HTML 60%</h5>
+              <h5>JAVASCRIPT 60%</h5>
             </div>
           </div>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="50" style="width:50%">
-              <h5>CSS 50%</h5>
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" style="width:80%">
+              <h5>PHP 80%</h5>
             </div>
           </div>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="20" style="width:20%">
-              <h5>JAVASCRIPT 20%</h5>
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" style="width:60%">
+              <h5>C# 60%</h5>
             </div>
           </div>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="50" style="width:50%">
-              <h5>PHP 50%</h5>
-            </div>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="30" style="width:30%">
-              <h5>C# 30%</h5>
-            </div>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="50" style="width:50%">
-              <h5>SQL 50%</h5>
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" style="width:80%">
+              <h5>SQL 80%</h5>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <h4>Frameworks</h4>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="20" style="width:20%">
-              <h5>JQUERY 20%</h5>
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" style="width:60%">
+              <h5>JQUERY 60%</h5>
             </div>
           </div>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="50" style="width:50%">
-              <h5>BOOTSTRAP 50%</h5>
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" style="width:80%">
+              <h5>BOOTSTRAP 80%</h5>
             </div>
           </div>
-          <!--<div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="0" style="width:0%">
-          <h5>SYMFONY 0%</h5>
-        </div>
-      </div>-->
-    </div>
-  </div>
-  <p class="text-center">Outils utilisés : Atom, GitLab, GitBash, NetBeans, Visual Studio, WampServer, Umbrello</p>
-  <p class="text-center">Gestion de base de données : MySql, SQL Server</p>
-</div>
-</section>
-<!--section "expérience" avec une timeline-->
-<section id="experience">
-  <div class="container">
-    <div class="white-divider"></div>
-    <div class="heading">
-      <h2>Expérience Professionelle</h2>
-    </div>
-    <ul class="timeline"><!--création de la timeline-->
-      <li>
-        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
-        <div class="timeline-panel-container">
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3>Centre Hospitalier Soissons 02</h3>
-              <h4>Technicienne Informatique</h4>
-              <p class="text-muted"><small class="fas fa-clock"></small> 2015-2018 </p>
-            </div>
-            <div class="timeline-body color-black">
-              <p>- Assistance et dépannage Informatique niveau 1 et 2 : utilisateurs et fournisseurs</p>
-              <p>- Lancement de traitements informatiques et tâches d'exploitation</p>
-              <p>- Installation des versions et patchs correctifs</p>
-              <p>- Environnements Windows et Linux</p>
-              <p>- Connaissances de nombreux logiciels de gestion et médicaux </p>
-              <p>- Rédaction de documentation utilisateurs</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
-        <div class="timeline-panel-container-inverted">
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3>Traiteur du Centre Soissons 02</h3>
-              <h4>Direction</h4>
-              <p class="text-muted"><small class="fas fa-clock"></small> 2000-2015</p>
-            </div>
-            <div class="timeline-body">
-              <p>Gestion et comptabilité</p>
-              <p>Secrétariat de Direction</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
-        <div class="timeline-panel-container">
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h3>GIP Transfusion Sanguine Belleu 02</h3>
-              <h4>Technicienne Informatique</h4>
-              <p class="text-muted"><small class="fas fa-clock"></small> 1993-1999</p>
-            </div>
-            <div class="timeline-body">
-              <p>Assistance informatique des utilisateurs</p>
-              <p>Gestion des stocks informatiques</p>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-<!--section "formation"-->
-<section id="formation">
-  <div class="container">
-    <div class="red-divider"></div>
-    <div class="heading">
-      <h2>Formation</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="formation-block">
-          <h5>2019</h5>
-          <span class="fas fa-graduation-cap"></span>
-          <h3>  Formation Développeur Web et Web Mobiles </h3>
-          <h4>Ecole du numérique La Manu</h4>
-          <div class="red-divider"></div>
-          <h6>Soissons 02</h6>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="formation-block">
-          <h5>1993</h5>
-          <span class="fas fa-graduation-cap"></span>
-          <h3>BTS Informatique de Gestion</h3>
-          <h4>Lycée Paul Claudel</h4>
-          <div class="red-divider"></div>
-          <h6>Laon 02</h6>
+      <p class="text-center">Outils utilisés : Atom, GitLab, GitBash, NetBeans, Visual Studio, WampServer, PHP My Admin</p>
+      <p class="text-center">Gestion de base de données : MySql, SQL Server</p>
+    </div>
+  </section>
+  <!--section "expérience" avec une timeline-->
+  <section id="experience">
+    <div class="container">
+      <div class="white-divider"></div>
+      <div class="heading">
+        <h2>Expérience Professionelle</h2>
+      </div>
+      <ul class="timeline"><!--création de la timeline-->
+        <li>
+          <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+          <div class="timeline-panel-container">
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>La Manu 02 Soissons</h3>
+                <h4>Développeuse web et web mobiles</h4>
+                <p class="text-muted"><small class="fas fa-clock"></small> 2019 </p>
+              </div>
+              <div class="timeline-body color-black">
+                <p>Développement d’applications web HTML/CSS, JAVASCRIPT, BOOTSTRAP, PHP, MYSQL, architecture MVC</p>
+                <p>- Réalisation du site web complet d’un traiteur avec un espace site vitrine,
+                  un espace vente en ligne et un espace formations pour entreprises et particuliers
+                  (Cahier des charges, architecture MVC, HTML/CSS, PHP, JAVASCRIPT, MYSQL)</p>
+                <p>- Réalisation d’une application de gestion de rendez-vous patients pour un Centre Hospitalier
+                  (architecture MVC, HTML/CSS, PHP, JAVASCRIPT, MYSQL)</p>
+                <p>- Réalisation d'un site e-commerce pour une épicerie en PHP</p>
+                <p>- Réalisation du site web d'un colyseum (architecture MVC, HTML/CSS, PHP, JAVASCRIPT, MYSQL)</p>
+            </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+          <div class="timeline-panel-container-inverted">
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>Centre Hospitalier Soissons 02</h3>
+                <h4>Technicienne Informatique</h4>
+                <p class="text-muted"><small class="fas fa-clock"></small> 2015-2018 </p>
+              </div>
+              <div class="timeline-body color-black">
+                <p>- Hotliner Informatique (Travail en équipe, astreintes informatiques)</p>
+                <p>- Missions de lancement, accompagnement et corrections sur les nouveaux logiciels</p>
+                <p>- Assistance et dépannage Informatique niveau 1 et 2 : utilisateurs et fournisseurs</p>
+                <p>- Lancement de traitements informatiques et tâches d'exploitation</p>
+                <p>- Installation des versions et patchs correctifs</p>
+                <p>- Environnements Windows et Linux</p>
+                <p>- Connaissances de nombreux logiciels de gestion et médicaux </p>
+                <p>- Rédaction de documentation utilisateurs</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+          <div class="timeline-panel-container">
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>Traiteur du Centre Soissons 02</h3>
+                <h4>Direction</h4>
+                <p class="text-muted"><small class="fas fa-clock"></small> 2000-2015</p>
+              </div>
+              <div class="timeline-body">
+                <p>Responsabilité d'une équipe de 25 personnes</p>
+                <p>Gestion administrative et comptabilité</p>
+                <p>Informatique de Gestion</p>
+                <p>Secrétariat de Direction, utilisation du pack Office</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><span class="fas fa-briefcase"></span></div>
+          <div class="timeline-panel-container-inverted">
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h3>GIP Transfusion Sanguine Belleu 02</h3>
+                <h4>Technicienne Informatique</h4>
+                <p class="text-muted"><small class="fas fa-clock"></small> 1993-2000</p>
+              </div>
+              <div class="timeline-body">
+                <p>Assistance et dépannage informatique des utilisateurs</p>
+                <p>Mise en place d'un plan de Gestion des stocks informatiques</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--section "formation"-->
+  <section id="formation">
+    <div class="container">
+      <div class="red-divider"></div>
+      <div class="heading">
+        <h2>Formation</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="formation-block">
+            <h5>2019</h5>
+            <span class="fas fa-graduation-cap"></span>
+            <h3>  Formation Développeur Web et Web Mobiles </h3>
+              <h4>Titre d'état Niveau III</h4>
+            <h4>Ecole du numérique La Manu</h4>
+            <div class="red-divider"></div>
+            <h6>805 heures Programme intensif avec réalisation de projets concrets en autonomie</h6>
+            <h6>Soissons 02</h6>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="formation-block">
+            <h5>1993</h5>
+            <span class="fas fa-graduation-cap"></span>
+            <h3>BTS Informatique de Gestion</h3>
+            <h4>Lycée Paul Claudel</h4>
+            <div class="red-divider"></div>
+            <h6>Laon 02</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--section "portofolio" avec mes projets
-<section id="portfolio">
-<div class="container">
-<div class="white-divider"></div>
-<div class="heading">
-<h2>Portfolio</h2>
+  </section>
+  <!--section "portofolio" avec mes projets
+  <section id="portfolio">
+  <div class="container">
+  <div class="white-divider"></div>
+  <div class="heading">
+  <h2>Portfolio</h2>
 </div>
 <div class="row">
 <div class="col-md-4">
-<a href="file:///C:/Users/Sandrine%20A/Documents/PROJETS/projetApple/index.html" target="_blank"><!--ouvre le lien dans un nouvel onglet
+<a href="file:///C:/Users/Sandrine%20A/Documents/PROJETS/projetApple/index.html" target="_blank">ouvre le lien dans un nouvel onglet
 <img class="img-thumbnail" src="assets/img/apple.png" alt="Projet APPLE">
 </a>
 </div>
@@ -257,8 +284,6 @@
         <div class="carousel-inner mb-5">
           <div class="carousel-item active mx-auto"><!--premier element-->
             <img class="d-block w-100 pb-5" src="assets/img/apple.png" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
             <div class="border1 border-white py-2">
               <h3>Projet APPLE</h3>
               <h5>Reproduction la page d'accueil du site APPLE en HTML</h5>
@@ -266,8 +291,6 @@
           </div>
           <div class="carousel-item mx-auto"><!--deuxième element-->
             <img class="d-block w-100 pb-5" src="assets/img/ecommerce.jpg" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
             <div class="border1 py-2">
               <h3>Projet E-commerce</h3>
               <h5>Créer un site E-commerce</h5>
@@ -275,8 +298,6 @@
           </div>
           <div class="carousel-item mx-auto"><!--troisième element-->
             <img class="d-block w-100 pb-5" src="assets/img/occordo.jpg" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
             <div class="border1 py-2">
               <h3>Projet PHP</h3>
               <h5>Création d'un site internet à partir du fichier XML fourni</h5>
@@ -284,35 +305,29 @@
           </div>
           <div class="carousel-item mx-auto"><!-- quatrieme element-->
             <img class="d-block w-100 pb-5" src="assets/img/colyse.jpg" alt="Fourth slide">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
             <div class="border1 py-2">
               <h3>Projet PDO</h3>
-              <h5>Création du site internet d'un colyseum selon la méthode VMC</h5>
+              <h5>Création du site internet d'un colyseum selon la méthode MVC</h5>
             </div>
           </div>
           <div class="carousel-item mx-auto"><!--cinquieme element-->
-            <img class="d-block w-100 pb-5" src="assets/img/.jpg" alt="Fiveth slide">
-            <div class="carousel-caption d-none d-md-block">
-            </div>
-            <div class="border1 py-3">
-              <h3>Projet personnel</h3>
-              <h5>Projet personnel pour la validation du diplôme</h5>
-            </div>
-          </div>
+          <img class="d-block w-100 pb-5" src="assets/img/capture.png" alt="Fifth slide">
+          <div class="border1 py-3">
+          <h3>Projet personnel</h3>
+          <h5>Création du site internet d'un traiteur selon la méthode MVC</h5>
         </div>
-        <!--les 2 chevrons gauche droite-->
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
+    <!--les 2 chevrons gauche droite-->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="chevron" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+    </a>
   </div>
+</div>
+</div>
 </section>
 <footer class="text-center">
   <a href="#about"><!--footer qui redirige vers la section"about" quand on clique sur le chevron via jquery-->
